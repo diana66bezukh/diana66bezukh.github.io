@@ -1,0 +1,44 @@
+#s3 {
+    position: relative;
+}
+
+.cloud {
+    max-width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@-webkit-keyframes slideCloud {
+    from {
+        -webkit-transform: translate3d(-500%, 0, 0);
+        transform: translate3d(-500%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideCloud {
+    from {
+        -webkit-transform: translate3d(-500%, 0, 0);
+        transform: translate3d(-500%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideCloud {
+    -webkit-animation-name: slideCloud;
+    animation-name: slideCloud;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

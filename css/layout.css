@@ -1,0 +1,104 @@
+body {
+    font-size: 16px;
+}
+
+section {
+    min-height: 100vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    z-index: 0;
+}
+
+.wrapper {
+    display: block;
+    align-content: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    top: -500px;
+    /*    min-height: 1px;*/
+    padding-right: 15px;
+    padding-left: 500px;
+    color: darkred;
+    font-family: century gothic, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+#footer {
+    height: 70px;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+a {
+    color: orange;
+    /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: orange;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+#s1 {
+    background-color: lemonchiffon;
+    font-family:  century gothic, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+    padding: 50px;
+}
+
+#s2 {
+    padding: 40px;
+}
+
+h2 {
+    color: firebrick;
+    font-size: 2.5rem;
+    margin: 130px 10px 10px 10px;
+}
+
+.textbox {
+    padding: 50px;
+}
+
+.logotext {
+    margin: 50px;
+    /*    max-width: 70vh;*/
+}
+
+#s3 {
+    background-color: cornsilk;
+}
+
+#s4 {
+    background-color: floralwhite;
+}
+
+@media screen and (max-width:575px) {
+
+    .container,
+    .navbar .navbar-brand {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    @media screen and (max-width:767px) {}
